@@ -200,11 +200,11 @@ module.exports = KingmdWH = async (KingmdWH, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            KingmdWH.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` [🇱🇰𝚱𝚰𝚴Ｇ 𝛃𝚯𝚪🤘]`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./KINGMedia/logo.jpeg`),"sourceUrl": "https://telegra.ph/file/24b9b8507613125d34bd1.jpg"}}}, { quoted: m})
+            KingmdWH.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` [ＡＦＹＯＯＮ　どばは]`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./KINGMedia/logo.jpeg`),"sourceUrl": "https://telegra.ph/file/24b9b8507613125d34bd1.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            KingmdWH.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` [🇱🇰𝚱𝚰𝚴Ｇ 𝛃𝚯𝚪🤘]`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./KINGMedia/logo.jpeg`),"sourceUrl": "https://telegra.ph/file/24b9b8507613125d34bd1.jpg"}}}, { quoted: m})
+            KingmdWH.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` [ＡＦＹＯＯＮ　どばは]`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./KINGMedia/logo.jpeg`),"sourceUrl": "https://telegra.ph/file/24b9b8507613125d34bd1.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -1453,7 +1453,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `╭───────────╮
-│   𝗞𝗜𝗡𝗚 𝗕𝗢𝗧 𝗧𝗔𝗚 𝗔𝗟𝗟  │
+│   ＡＦＹＯＯＮ　どばは  │
 ╰───────────╯
 
  
@@ -1758,22 +1758,22 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: '🔥 GITHUB 🔥',
+                                    displayText: ' GITHUB ',
                                     url: `${sc}`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '🔥 YOUTUBE 🔥',
+                                    displayText: ' YOUTUBE ',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎲 MENU 🎲',
+                                    displayText: ' MENU ',
                                     id: 'menu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🇱🇰 OWNER 🇱🇰',
+                                    displayText: ' OWNER ',
                                     id: 'owner'
                                 }
                             }]
@@ -2087,7 +2087,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
-                    caption: `*┏━━━[🧚🏻ᴠɪʜᴀɴɢᴀ ᴅᴏᴡɴ 📩]*
+                    caption: `*┏━━━[VIDEO]*
 
 ┃💎Title : ${anu.title}
 
@@ -2100,7 +2100,7 @@ break
 ┃⌛Runtime : ${runtime(process.uptime())}
 
 ┗━━━━━━━━━❊`,
-                    footer: KingmdWH.user.name,
+                    footer: .user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2119,7 +2119,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
-                    caption: `*┏━━━[🧚🏻ᴠɪʜᴀɴɢᴀ ꜱᴏɴɢ ᴅᴏᴡɴ 📩]*
+                    caption: `*┏━━━[SONG]*
 
 ┃💎Title : ${anu.title}
 
@@ -2132,7 +2132,7 @@ break
 ┃⌛Runtime : ${runtime(process.uptime())}
 
 ┗━━━━━━━━━❊`,
-                    footer: 'νιнαηgα м∂🧚',
+                    footer: 'ＡＦＹＯＯＮ　ゕカ引',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2150,7 +2150,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
-                    caption: `*┏━━━[🧚🏻ᴠɪʜᴀɴɢᴀ ᴠɪᴅ ᴅᴏᴡɴ 📩]*
+                    caption: `*┏━━━[]*
 
 ┃💎Title : ${anu.title}
 
@@ -2163,7 +2163,7 @@ break
 ┃⌛Runtime : ${runtime(process.uptime())}
 
 ┗━━━━━━━━━❊`,
-                    footer: 'νιнαηgα м∂🧚',
+                    footer: 'ＡＦＹＯＯＮ　ゕカ引',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2176,7 +2176,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                KingmdWH.sendImage(m.chat, media.thumb, `🧚 Title : ${media.title}\n🧚 File Size : ${media.filesizeF}\n🧚 Url : ${isUrl(text)}\n🧚 Ext : MP3\n🧚 Resolution : ${args[1] || '320kbps'}`, m)
+                KingmdWH.sendImage(m.chat, media.thumb, ` Title : ${media.title}\n File Size : ${media.filesizeF}\n Url : ${isUrl(text)}\n Ext : MP3\n Resolution : ${args[1] || '320kbps'}`, m)
                 KingmdWH.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
                        break
@@ -2186,7 +2186,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                KingmdWH.sendImage(m.chat, media.thumb, `🧚 Title : ${media.title}\n🧚 File Size : ${media.filesizeF}\n🧚 Url : ${isUrl(text)}\n🧚 Ext : MP3\n🧚 Resolution : ${args[1] || '320kbps'}`, m)
+                KingmdWH.sendImage(m.chat, media.thumb, ` Title : ${media.title}\n File Size : ${media.filesizeF}\n Url : ${isUrl(text)}\n Ext : MP3\n Resolution : ${args[1] || '320kbps'}`, m)
                 KingmdWH.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2331,7 +2331,7 @@ case 'webtonsearch': case 'webtoon':
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "🔥 YOUTUBE 🔥",
+						"displayText": " YOUTUBE ",
 						"url": `${myweb}`
 						}
 					}
@@ -2355,7 +2355,7 @@ case 'webtonsearch': case 'webtoon':
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "🔥 YOUTUBE 🔥",
+						"displayText": " YOUTUBE ",
 						"url": `${myweb}`
 						}
 					}
@@ -3389,28 +3389,21 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                      case 'alive' :{
                            	timestampe = speed();
 latensie = speed() - timestampe
-Kingbotalive = `┏━❬νιнαηgα м∂🧚❭
+Kingbotalive = `┏━❬ＡＦＹＯＯＮ　ゕカ引❭
 
-Hello 👋..
-
-    How Are You 😼
-
-┃Owner 🎩: ᴠɪʜͥᴀɴͣɢͫᴀ ʏᴛ
-
-┃Version 🧚: 1.0.1
-
-┃⌛Runtime : ${runtime(process.uptime())}
+ＨＥＹ！
+Ｉ＇Ｍ ＡＬＩＶＥ
 
 ┗━━━━━━━━━❊ `
            let buttons = [
-               {buttonId: `command`, buttonText: {displayText: '🎭 LIST MENU 🎭'}, type: 1},
-               {buttonId: `ping`, buttonText: {displayText: '🎲 SYSTEM STATUS 🎲'}, type: 1},
-               {buttonId: `owner`, buttonText: {displayText: '🇱🇰 OWNER 🇱🇰️'}, type: 1}
+               
+               {buttonId: `ping`, buttonText: {displayText: ' SYSTEM STATUS '}, type: 1},
+               {buttonId: `owner`, buttonText: {displayText: '🇰 OWNER 🇰️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: fs.readFileSync('./KINGMedia/logo.jpeg'),
                     caption: Kingbotalive,
-                    footer: 'νιнαηgα м∂🧚',
+                    footer: '【ＡＦＹＯＯＮ】',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3420,17 +3413,9 @@ Hello 👋..
                      case 'bot':{
                            	timestampe = speed();
 latensie = speed() - timestampe
- anu = `┏━❬νιнαηgα м∂🧚❭
+ anu = `┏━❬【ＡＦＹＯＯＮ】❭
 
-Hello 👋..
-
-    How Are You 😼
-
-┃Owner 🎩: ᴠɪʜͥᴀɴͣɢͫᴀ ʏᴛ
-
-┃Version 🧚: 1.0.1
-
-┃⌛Runtime : ${runtime(process.uptime())}
+ＨＥＹ！Ｉ＇Ｍ ＡＬＩＶＥ
 
 ┗━━━━━━━━━❊`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -3439,30 +3424,30 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./KINGMedia/logo.jpeg')},
-                            hydratedFooterText: 'νιнαηgα м∂🧚',
+                            hydratedFooterText: '【ＡＦＹＯＯＮ】',
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: '🔥 YOUTUBE 🔥',
+                                    displayText: ' YOUTUBE ',
                                     url: `${myweb}`
                                 }
                             }, {
                             	urlButton: {
-                                displayText: '🔥 GITHUB 🔥',
+                                displayText: ' GITHUB ',
                                     url: `${sc}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎭 LIST MENU 🎭',
+                                    displayText: ' LIST MENU ',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '⚙️️ SYSTEM STATUS ⚙️',
+                                    displayText: '⚙ SYSTEM STATUS ⚙',
                                     id: `${prefix}ping`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🇱🇰 OWNER 🇱🇰',
+                                    displayText: '🇱 OWNER 🇱',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3475,17 +3460,10 @@ break
             case 'list': case 'menu': case 'panel': case 'help' :{
             	timestampe = speed();
 latensie = speed() - timestampe
-                anu = `┏━❬νιнαηgα м∂🧚❭
+                anu = `┏━❬ＡＦＹＯＯＮ　どばは❭
 
-Hello 👋..
-
-    How Are You 😼
-
-┃Owner 🎩: ᴠɪʜͥᴀɴͣɢͫᴀ ʏᴛ
-
-┃Version 🧚: 1.0.1
-
-┃⌛Runtime : ${runtime(process.uptime())}
+ＨＥＹ！
+Ｉ＇Ｍ ＡＬＩＶＥ
 
 ┗━━━━━━━━━❊`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -3494,7 +3472,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./KINGMedia/logo.jpeg')}, 
-                            hydratedFooterText: 'νιнαηgα м∂🧚',
+                            hydratedFooterText: 'ＡＦＹＯＯＮ　どばは',
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YOUTUBE ',
@@ -3531,16 +3509,16 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `👋ʜɪ ᴛʜᴇʀᴇ ${pushname},`,
-                    description: `🔥ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴍᴇɴᴜ🔥\n\n*🎲 THIS IS νιнαηgα м∂🧚 MENU LIST*\n*💹 YOU CAN DO LOT OF WORKS WITH ME AND DON'T USE BOT FOR BAD THINKS !🤘*\n`,
+                    description: `🔥ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴍᴇɴᴜ🔥\n\n* MENU LIST*\n*💹 YOU CAN DO LOT OF WORKS WITH ME AND DON'T USE BOT FOR BAD THINKS !🤘*\n`,
                     buttonText: "ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ꜱᴇʟᴇᴄᴛ ᴍᴇɴᴜ",
-                    footerText: 'νιнαηgα м∂🧚',
+                    footerText: 'ＡＦＹＯＯＮ　どばは',
                     listType: "SINGLE_SELECT",
                     sections: [{
                                 "title": "━━━━━━━[Short Menu]━",
 								"rows": [
 									{
 										"title": "ꜱʜᴏʀᴛ ᴍᴇɴᴜ",
-										"description": "මේකෙ වැදගත් කමාන්ඩ් ටික තියෙනවා...",
+										"description": "A Short Menu",
 										"rowId": `${prefix}shortmenu`
 									}
 								]
@@ -3676,7 +3654,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
 kingbotshortmenu = `
 [✿❯────「✿」────❮✿]
-            νιнαηgα м∂ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
+            ＡＦＹＯＯＮ　どばは
 [✿❯────「✿」────❮✿]
 
 ┏━━🍃ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴍᴅ🍃━📥
@@ -3712,7 +3690,7 @@ kingbotshortmenu = `
                 let buttonMessage = {
                     image: fs.readFileSync('./KINGMedia/logo.jpeg'),
                     caption: kingbotshortmenu,
-                    footer: 'νιнαηgα м∂🧚',
+                    footer: 'ＡＦＹＯＯＮ　どばは',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3724,7 +3702,7 @@ kingbotshortmenu = `
             }
             break
             case 'sc': case 'script': case 'git': {
-                reply('*νιнαηgα м∂🧚 created by VIHANGA YT*\n\n*❑ Contact Owner : https://wa.me/94729352830?text=HI......%20νιнαηgα м∂%20𝛃𝚯𝚪%20OWNER࿐*\n\n*❑ Github link → https://github.com/KING-BOT-OFFICIAL/KING-BOT*\n\n*❑ My channel link : https://youtube.com/channel/UCgwWV1Cya4_gUFKYOQYQtHw*\n\n*🔰 For More Updates Subscribe The Channel 🔰*')
+                ('ＡＦＹＯＯＮ　どば')
             }
             break
 case 'allmenu': {
